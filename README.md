@@ -30,8 +30,8 @@ List all the software, tools, and technologies that users need to install before
 
 Step-by-step instructions on how to install and configure your project.
 
-1. Clone the repository: `git clone https://github.com/kanini/ka23-kanini-academy-portal.git`
-2. Navigate to the Angular app: `cd Kanini-Academy --> src --> app`
+1. Clone the repository: `https://github.com/Ishant-kumawat/educationportal.git`
+2. Navigate to the Angular app: `cd educationportal --> src --> app`
 3. Install dependencies: `npm install`  anf if needed `npm i tslib `
 4. Navigate to the .NET Core API: `cd KaniniAcademy Backend`
 5. Build and run the API: `dotnet run`
