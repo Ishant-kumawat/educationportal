@@ -1,0 +1,48 @@
+nav {
+    margin-left: 10px;
+    /* margin-top: 20%; */
+    -webkit-text-fill-color: dimgray;
+}
+
+nav ul {
+ list-style-type: none;
+}
+
+nav ul li {
+ display: inline-block;
+ padding: 10px;
+
+}
+
+.navbar-item a {
+ text-decoration: none;
+ color: darkgray;
+ font-size: medium;
+}
+
+.navbar-item a:hover {
+ color: black;
+}
+
+
+select {
+ /* margin-left: 20%; */
+ margin-top: 40%;
+}
+
+a:link {
+ color: black;
+
+ text-decoration: none;
+}
+form{
+ margin-left: 100%;
+ margin-top: 39%;
+ font-size: large;
+ /* margin: 0.75px; */
+
+
+}
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,38 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="column1">
+      <div class="card flex-row">
+        <div class="grid-container" >
+          <div class="card-image"><img [src]="certificatedetail.image" alt="Certificate Image" *ngIf="certificatedetail.image" /></div>
+          <div class="content">
+            <h5 class="card-title">{{certificatedetail.cname}}</h5>
+            <p class="card-text">{{certificatedetail.description}}</p>
+          </div>
+          <div class="card-button"><button type="button"
+              style="background-color: #2B2B2B;color: white; width: 150px; height: 40px;">Send Request</button></div>
+  
+        </div>
+      </div>
+  
+      <div class="tool">
+        <ul id="train">
+          <li><a routerLink="about" style="text-decoration: none;  font-size: large; color:gray; ">About</a></li>
+          <li><a routerLink="works" style="text-decoration: none; font-size: large; color: gray;padding-left: 50px;">How Its Works</a></li>
+          <li><a routerLink="#"style="text-decoration: none; font-size: large; color: gray;padding-left: 50px;">Syllabus</a></li>
+          <li><a routerLink="faq" style="text-decoration: none; font-size: large; color: gray;padding-left: 50px;">FAQ</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+
+    </div>
+  
+    <div class="column2">
+      <app-rightside></app-rightside>
+    </div>
+  </div>
+  <app-footer></app-footer>

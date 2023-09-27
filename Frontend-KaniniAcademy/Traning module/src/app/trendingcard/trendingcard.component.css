@@ -1,0 +1,38 @@
+.button-label{
+
+    width: 100px;
+    height: 40px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    
+    color: #000000;
+    border: none;
+    background: #CCCCCC;
+
+   
+    
+    }
+    .card-flex{
+        display: flex;
+        flex-direction: row;
+    }
+    .card-body-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between ;
+    }
+    
+.greyscale{
+    filter: grayscale(100%);
+}
+.card-title{
+    font-family: 'Manrope'; 
+
+}
+.card-text{
+    font-size: small;
+}

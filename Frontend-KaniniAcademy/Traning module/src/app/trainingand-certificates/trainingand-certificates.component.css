@@ -1,0 +1,51 @@
+.sidebar ul li a {
+    color: #000000;
+    /* Default color */
+  }
+  
+  .sidebar ul li a.clicked {
+    color: #fffcfc;
+    background-color: black;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  
+.sidebar {
+    width: 200px;
+    background-color: white;
+    width: 300px;
+    padding-top: 40px;
+    margin: 0%;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    padding-right: 10px;
+  }
+  
+  .sidebar li {
+    border: 1px solid;
+    border-color: gray;
+  }
+  
+  .sidebar li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    height: 45px;
+  }
+  
+.tool li {
+    list-style: none;
+    float: left;
+  }
+
+  .certitab {
+    color: grey;
+    padding-left: 8%;
+    padding-top: 20px;
+  }

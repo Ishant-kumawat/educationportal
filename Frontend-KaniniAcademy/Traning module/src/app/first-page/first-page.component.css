@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+  }
+  
+  .outer-flex-container {
+    flex: 1; /* Distribute available space equally between the divs */
+  }
+  
+  .inner-flex-container {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+  }
+  
+  .inner-flex-container > * {
+    margin: 10px; /* Add spacing between items */
+
+  }
+  .whole{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 100vw;
+    height: 100%;
+
+
+  }
+  #one{
+    grid-column: 1/4;
+    margin-top: 5%;
+  }
+  #two{
+    grid-column: 4/6;
+    border: solid 1px #E1E1E1;
+    margin-top: 3.5rem;
+
+
+
+  }
+  #integrated-components{
+   height: 100%;
+   width: 100%;
+  }
+  #max{
+    max-width:fit-content;
+    height: 100%;
+  }
+
+  body{
+    overflow: hidden !important;
+    height: max-content;
+    margin-top:5%
+  }

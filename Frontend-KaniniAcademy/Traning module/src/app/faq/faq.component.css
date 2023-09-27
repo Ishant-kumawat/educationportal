@@ -1,0 +1,77 @@
+
+.parabutton {
+  padding-left: 2%;
+}
+
+.div1 {
+  padding-top: 20px;
+  margin-right: 50px;
+}
+
+
+.accordion {
+  width: 900px;
+  color: black;
+
+}
+
+.accordion .container {
+  position: relative;
+  margin: 10px 10px;
+
+}
+
+.accordion .label {
+  position: relative;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+
+}
+
+.accordion .label::before {
+  content: '+';
+  color: black;
+  position: absolute;
+  top: 10%;
+  right: -5px;
+  font-size: 30px;
+  transform: translateY(-50%);
+
+}
+
+.accordion .content {
+  position: relative;
+  background: white;
+  height: 0;
+  font-size: 20px;
+  text-align: justify;
+  width: 780px;
+  overflow: hidden;
+  transition: 0.5s;
+
+}
+
+.accordion hr {
+  width: 100;
+  margin-left: 0;
+  border: 0.5px solid grey;
+}
+
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 1rem;
+  border-color: transparent !important;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border-color: transparent !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  border-color: white ;
+}
+

@@ -1,0 +1,12 @@
+.text-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .accordian-button{
+    border-radius: 20%;
+  }
+
+  .accordian-item{
+    border-radius: 20%;
+  }

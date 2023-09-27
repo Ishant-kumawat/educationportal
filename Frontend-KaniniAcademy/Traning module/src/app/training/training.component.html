@@ -1,0 +1,26 @@
+
+<div class="container">
+  <div class="column2">
+    <div style="padding-top: 4%;">
+      <div *ngFor="let t of training" class="card">
+        <div class="grid-container">
+          <div class="item1">
+            <img [src]="t.image" alt="Tour Image" *ngIf="t.image">
+          </div>
+          <div class="item2">
+            <h5 class="card-title">{{t.tname}}</h5>
+            <p class="card-text">{{t.description}}</p>
+            <div class="row d-flex justify-content-left">
+              <div class="col-lg-2">
+                Video: <strong>{{t.duration}} min</strong>
+              </div>
+            </div>
+          </div>
+          <div class="item3">
+            <button class="btn btn-dark" (click)="startTraining(t.tid)">Start Training</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

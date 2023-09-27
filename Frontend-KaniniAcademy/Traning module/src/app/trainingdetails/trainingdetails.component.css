@@ -1,0 +1,156 @@
+.reviews-container {
+  display: flex;
+}
+
+.review-item {
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+
+}
+
+.review-item.selected-review::after {
+  font-size: x-large;
+  color: black;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.986);
+}
+
+
+.profile-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 20%;
+
+}
+
+.profile-details {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.review-item {
+
+
+  padding: 10px;
+
+  cursor: pointer;
+}
+
+.review-item:last-child {
+  margin-right: 0;
+}
+
+.selected-review {
+
+  padding: 10px;
+}
+
+.review-description {
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.addnotes {
+  border-radius: 5px;
+  resize: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  font-size: 14px;
+}
+
+.uploadarea {
+  border-radius: 5px;
+  resize: none;
+  padding: 10px;
+  width: 100%;
+  height: 170px;
+  font-size: 14px;
+}
+
+#savebutton {
+  width: 90%;
+}
+
+ngb-rating {
+  color: rgba(15, 17, 17, 0.917);
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 30%;
+  grid-gap: 10px;
+  margin: 3%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:visited {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+  .reviews-container {
+    flex-direction: row;
+    width: 10%;
+  }
+}
+
+@media (max-width:600px) {
+  .profile-container {
+    display: block;
+  }
+}
+
+
+.addnotes.invalid {
+  border: 1px solid red;
+}
+
+.validation-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.uploadarea.invalid {
+  border: 1px solid red;
+}
+
+.certitab {
+  color: grey;
+  padding-left: 110px;
+  padding-top: 20px;
+}
+
+

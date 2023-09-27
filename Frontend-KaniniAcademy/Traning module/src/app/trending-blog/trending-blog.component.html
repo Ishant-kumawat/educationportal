@@ -1,0 +1,11 @@
+
+<div class="grid-container">
+    
+    <div >
+        <h3>Trending Blogs</h3>
+      <div *ngFor="let card of Treblog_card_data">
+        <app-trendingcard [TreblogImageSrc]="card.TreblogImage"  [label]="card.label" ></app-trendingcard>
+      </div>
+    </div>
+  </div>
+  

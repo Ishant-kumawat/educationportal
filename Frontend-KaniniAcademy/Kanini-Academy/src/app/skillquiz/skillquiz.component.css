@@ -1,0 +1,152 @@
+#div1 {
+    position: relative;
+    width: 90%;
+    height: 575px;
+    margin-left: 100px;
+    margin-top: 30px;
+    background: #EFEFEF;
+    border-radius: 8px;
+}
+
+#div2 {
+    position: absolute;
+    width: 401px;
+    height: 407px;
+    left: 900px;
+    top: 280px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.tit1 {
+    position: absolute;
+    width: 350px;
+    height: 55px;
+    left: 96px;
+    top: 155px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+
+    color: #2B2B2B;
+}
+
+.content1 {
+    position: absolute;
+    width: 681px;
+    height: 108px;
+    left: 96px;
+    top: 219px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+
+    color: #666666;
+}
+
+.img-1 {
+    position: absolute;
+    left: 83px;
+    top: 373.26px;
+    mix-blend-mode: luminosity;
+}
+
+.badge {
+    position: absolute;
+    left: 19px;
+    top: 35px;
+    mix-blend-mode: luminosity;
+}
+
+.date1 {
+    position: absolute;
+    width: 89px;
+    height: 19px;
+    left: 29px;
+    top: 131px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #AAAAAA;
+
+}
+
+.tit2 {
+    position: absolute;
+    width: 244px;
+    height: 72px;
+    left: 29px;
+    top: 156px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
+
+
+    color: #2B2B2B;
+}
+
+.content2 {
+    position: absolute;
+    width: 364px;
+    height: 47px;
+    left: 29px;
+    top: 238px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+
+    color: #666666;
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 24px;
+    gap: 20px;
+
+    position: absolute;
+    width: 140px;
+    height: 47px;
+    left: 29px;
+    top: 325px;
+
+    background: #2B2B2B;
+    border-radius: 5px;
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.breadcrumbs{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.tag{
+    border-radius: 5px;
+    border-color: #666666;
+    background-color: white;
+    color: #666666;
+}
+
+.tag:hover{
+    background-color: black;
+    color: white;
+}

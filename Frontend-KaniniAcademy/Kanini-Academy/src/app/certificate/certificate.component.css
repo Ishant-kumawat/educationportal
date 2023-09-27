@@ -1,0 +1,124 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.column1 {
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+.tool li {
+    list-style: none;
+    float: left;
+    margin: 0%
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+
+}
+
+.card-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.card-content h2 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.card-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card-text {
+    color: grey;
+}
+
+.wrapper {
+    border: 1px solid green;
+    padding: 0;
+}
+
+.wrapper-pad {
+    padding: 1em;
+}
+
+.item1 {
+    width: 90px;
+}
+
+.item2 {
+    grid-column: 2/3;
+}
+
+.item3 {
+    grid-column: 3/3;
+    margin-left: 15%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: white;
+    margin-top: 6.9px;
+    width: 300px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    padding-right: 10px;
+}
+
+.sidebar li {
+    /* margin-bottom: 10px; */
+    border: 1px solid;
+    border-color: gray;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #333;
+    height: 45px;
+}
+
+.sidebar li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.certitab {
+    color: grey;
+    padding-left: 110px;
+    padding-top: 20px;
+}
+
+.vl {
+border-left: 1px solid lightgray;
+height: 60px;
+}

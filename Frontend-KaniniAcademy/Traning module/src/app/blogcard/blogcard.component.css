@@ -1,0 +1,53 @@
+.card-flex{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border: none;
+    border-bottom: solid 1px #E1E1E1;
+    border-radius: none;
+    overflow-x: none;
+    width:200%
+
+}
+.button-label{
+
+width: 100px;
+height: 40px;
+
+font-family: 'Manrope'; 
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: #000000;
+border: none
+
+}
+.card-body-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.references{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+
+.greyscale{
+    filter: grayscale(100%);
+}
+.left{
+    grid-column: 1/2;
+
+}
+.right{
+    grid-column: 2/5;
+   
+}
+.card-title{
+    font-family: 'Manrope'; 
+}
+.card-text{
+    font-size: small;
+}

@@ -1,0 +1,205 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="container">
+    <p class="text-muted"><a class="text-muted" href="courses.html" style="text-decoration: none;">Courses</a>/Design/User Experience Courses/Usability Testing in UX Research.../User Research</p>
+    <div class="row">
+        <div class="col-9" >
+            <div class="row">
+                <div class="col-8">
+                    <h5>Usability Testing in UX Research & Design Evaluation(2022)</h5>
+                </div>
+                <div class="col-3" style="float:right">
+                    
+                </div>
+                <div class="col">
+                    <i class="bi bi-heart" style="float:left"></i>
+                    <i class="bi bi-bookmarks" style="float:right"></i>
+                </div>
+            </div>
+                <p class="text-muted">Created by Malt Milner</p>
+                <div class="video ratio ratio-16x9">
+                    <iframe class="border rounded" src="https://youtu.be/2QQQtiFwXjU" title="YouTube video" poster="./assets/images/UIUX.png" allowfullscreen></iframe>
+                </div><br>
+                <app-continuenavbar></app-continuenavbar>
+                
+                <!-- <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" id="a1" routerLink="description" style="font-size:20px;">Description</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" id="a2" routerLink="reviews" style="font-size:20px;">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" id="a3" routerLink="discussion" style="font-size:20px;">Discussion</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-secondary" id="a4" routerLink="resources" style="font-size:20px;">Resources</a>
+                    </li>
+                  </ul> -->
+                  <hr class="hr hr-blurry" style="padding-top:0px" />
+                    <div class="text-muted">
+
+                        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ducimus quidem ipsum temporibus in corrupti dolorum unde perferendis animi, totam ipsa autem, sapiente dolor est asperiores cumque reiciendis numquam et.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates pariatur temporibus eveniet explicabo eos excepturi. Facilis quibusdam mollitia nisi asperiores. Facere exercitationem perferendis illum corporis ea reprehenderit accusamus nisi.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates pariatur temporibus eveniet explicabo eos excepturi. Facilis quibusdam mollitia nisi asperiores. Facere exercitationem perferendis illum corporis ea reprehenderit accusamus nisi.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptates pariatur temporibus eveniet explicabo eos excepturi. Facilis quibusdam mollitia nisi asperiores. Facere exercitationem perferendis illum corporis ea reprehenderit accusamus nisi. -->
+                    </div>
+                  
+        </div>
+        <div class="col-3">
+            <h5>About the Course</h5><br>
+            <img src="./assets/images/dp.jpg" class="img" style="float:left;">
+            <div class="row">
+                <div style="float:right">
+                    <p>Malt Milner</p>
+                    <p class="text-muted" style="font-weight:none;line-height: 0%;">Product Designer</p>
+                </div>
+            </div>
+            <p style="font-size: 14px;text-align:left;" class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint porro, iste inventore eius laborum quia repudiandae labore repellat cupiditate placeat ipsam corrupti exercitationem qui nemo facilis libero, quasi aliquid nisi.</p>
+            <hr class="hr hr-blurry" />
+            <h4>Course Completion</h4>
+            <div class="row">
+                <div class="col">
+                    <a id="a5" routerLink="cctableofcontents">
+                        <button id="b1" (click)="changeColor('tableofcontents'); changeComponent('cctableofcontents')" 
+                            [ngClass]="{'black-button': activeButton === 'tableofcontents'}" 
+                            class="btn btn-bg-light border-secondary-subtle" 
+                            style="width:100%;text-align:none;font-size:15px;">
+                            Table of Contents
+                        </button>
+                    </a>
+                </div>
+                <div class="col">
+                    <a id="a6" routerLink="notes">
+                        <button id="b1" (click)="changeColor('notes'); changeComponent('notes')" 
+                            [ngClass]="{'black-button': activeButton === 'notes'}" 
+                            class="btn btn-bg-light border-secondary-subtle" 
+                            style="width:100%;font-size:15px;">
+                            Notes
+                        </button>
+                    </a>
+                </div>
+                
+            </div><br>
+            <article id="ar2">
+                <div class="switch-case" [ngSwitch]="selectedComponent" >
+                    <app-cctableofcontents *ngSwitchCase="'cctableofcontents'"></app-cctableofcontents>
+                    <app-notes *ngSwitchCase="'notes'"></app-notes>
+                    <div *ngSwitchDefault>
+                      <app-cctableofcontents/>
+                    </div>
+                </div>
+            </article>
+             <br> 
+            <div class="container row" style="width:100%">
+                <div class="col-8" style="font-size: 15px;font-weight:bold;float:left">People who completed</div>
+                <div class="col" style="font-size: 15px;"><a href="#" style="float:right;text-decoration:none;color:black;text-align:right" class="text-muted">Show all</a></div>
+            </div><br>
+            <div class="container">
+                <div class="row shadow-sm mb-2 bg-body-tertiary rounded">
+                    <div class="col-2">
+                        <img src="./assets/images/dp.jpg" class="img" style="float:left;padding:0px;">
+                    </div>
+                    <div class="col-8" >
+                        <p>Leila Jefferson</p>
+                        <p class="text-muted" style="font-weight:none;line-height: 10%;">8 Points</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                </div>
+                <div class="row shadow-sm mb-2 bg-body-tertiary rounded " >
+                    <div class="col-2">
+                        <img src="./assets/images/dp.jpg" class="img" style="float:left;">
+                    </div>
+                    <div class="col-8" >
+                        <p>Leila Jefferson</p>
+                        <p class="text-muted" style="font-weight:none;line-height: 0%;">8 Points</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                </div>
+                <div class="row shadow-sm mb-2 bg-body-tertiary rounded">
+                    <div class="col-2">
+                        <img src="./assets/images/dp.jpg" class="img" style="float:left;">
+                    </div>
+                    <div class="col-8" >
+                        <p>Leila Jefferson</p>
+                        <p class="text-muted" style="font-weight:none;line-height: 0%;">8 Points</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                </div>
+                <div class="row shadow-sm mb-2 bg-body-tertiary rounded">
+                    <div class="col-2">
+                        <img src="./assets/images/dp.jpg" class="img" style="float:left;">
+                    </div>
+                    <div class="col-8" >
+                        <p>Leila Jefferson</p>
+                        <p class="text-muted" style="font-weight:none;line-height: 0%;">8 Points</p>
+                    </div>
+                    <div class="col">
+                        <i class="bi bi-chat"></i>
+                    </div>
+                </div>
+            </div>
+            
+                </div>
+            </div>
+        </div>
+    
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col">
+                    <h4 class="col" style="float:left;padding: top 100px;">Notes</h4>
+                </div>
+                <div class="col">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h5>use of usability</h5>
+                </div>
+                <div class="col">
+                    <i class="bi bi-pencil" style="float:right"></i>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p class="text-muted" style="font-size: 15px;text-align: left;">Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit.<i class="bi bi-trash3" style="display:inline-block"></i> Fugit
+                        ad quibusdam, velit assumenda molestiae eos facilis incidunt doloribus itaque non architecto
+                        repellat quisquam alias, doloremque placeat animi. Incidunt, modi rerum.</p>
+                </div>
+            </div>
+            <div>
+                <h5>Lorem Ipsum</h5>
+                <p class="text-muted" style="font-size: 15px;text-align: left;">Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Delectus, libero adipisci quidem eaque in provident, molestias
+                    voluptatem corporis cum unde nesciunt molestiae natus expedita consequatur fuga, minus dolorum
+                    pariatur rem?</p>
+                <p class="text-muted" style="font-size: 15px;text-align: left;">Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Blanditiis mollitia nostrum, ex unde excepturi distinctio
+                    cupiditate, quo nulla necessitatibus nemo eligendi temporibus animi sapiente? Laudantium illo
+                    voluptates dolorum commodi quasi.</p>
+            </div>
+            <div class="container">
+                <textarea rows="5" cols="60" placeholder="Add a note"></textarea>
+            </div>
+            <div>
+                <button class="btn btn-bg-dark border-dark"
+                    style="width:100%;text-align:none;font-size:15px;background-color: black;color:white">Save
+                    Notes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,27 @@
+<ul class="nav">
+    <li class="nav-item">
+      <button class="nav-link text-secondary" id="a1"  style="font-size: 20px;" (click)="changeComponent('vctableofcontent')">Table of Content</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link text-secondary" id="a2"  style="font-size: 20px;" (click)="changeComponent('description')">Description</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link text-secondary" id="a3"  style="font-size: 20px;" (click)="changeComponent('vctranscript')">Transcript</button>
+    </li>
+    <li class="nav-item">
+      <button class="nav-link text-secondary" id="a4"  style="font-size: 20px;" (click)="changeComponent('vcexcercisefiles')">Exercise Files</button>
+    </li>
+    <li class="nav-item">
+        <button class="nav-link text-secondary" id="a5"  style="font-size: 20px;" (click)="changeComponent('vccoursereview')">Course Review</button>
+    </li>
+</ul>
+<hr class="hr hr-blurry" style="padding-top:0px" />
+<div class="switch-case" [ngSwitch]="selectedComponent" >
+  <app-vctableofcontent *ngSwitchCase="'vctableofcontent'"></app-vctableofcontent>
+  <app-description *ngSwitchCase="'description'"></app-description>
+  <app-vctranscript *ngSwitchCase="'vctranscript'"></app-vctranscript>
+  <app-vcexercisefiles *ngSwitchCase="'vcexcercisefiles'"></app-vcexercisefiles>
+  <app-vccoursereview *ngSwitchCase="'vccoursereview'"></app-vccoursereview>
+  <div *ngSwitchDefault>
+    <app-vctableofcontent/>
+  </div>

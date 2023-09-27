@@ -1,0 +1,201 @@
+CREATE TABLE UserDetails (
+	UserId int NOT NULL IDENTITY(1,1),
+	UserName varchar(255) NOT NULL,
+	Password varchar(255) NOT NULL,
+	Email varchar(255) NOT NULL,
+	DOB DATE NOT NULL,
+	Gender varchar(255) NOT NULL,
+	MobileNo bigint NOT NULL,
+	PRIMARY KEY (UserId)
+);
+
+CREATE TABLE Course (
+	CourseId int NOT NULL IDENTITY(1,1),
+	CourseName varchar(255) NOT NULL,
+	Course_Provider varchar(255) NOT NULL,
+	Image varchar(255) NOT NULL,
+	Rating int NOT NULL,
+	Created_By int NOT NULL,
+	PRIMARY KEY (CourseId)
+);
+
+CREATE TABLE Creator (
+	CreatorId int NOT NULL IDENTITY(1,1),
+	CreatorName varchar(255) NOT NULL,
+	CreatorImage varchar(255) NOT NULL,
+	Description varchar(255) NOT NULL,
+	Creator_Job varchar(255) NOT NULL,
+	Followers varchar(255) NOT NULL,
+	PRIMARY KEY (CreatorId)
+);
+
+CREATE TABLE Blogs (
+	BlogId int NOT NULL IDENTITY(1,1),
+	Topic varchar(255) NOT NULL,
+	Date_of_Upload DATE NOT NULL,
+	Image varchar(255) NOT NULL,
+	Created_by int NOT NULL,
+	Description varchar(1000) NOT NULL,
+	Blog_Category varchar(100) NOT NULL,
+	PRIMARY KEY (BlogId)
+);
+
+CREATE TABLE Training (
+	TId int NOT NULL,
+	Description varchar(255) NOT NULL,
+	Video varchar(255) NOT NULL,
+	Image varchar(255) NOT NULL,
+	TName varchar(255) NOT NULL,
+	Category varchar(255) NOT NULL,
+	Logo varchar(255) NOT NULL,
+	Created_by int NOT NULL,
+	Duration TIME NOT NULL,
+	Resources varchar(1000) NOT NULL,
+	PRIMARY KEY (TId)
+);
+
+CREATE TABLE Certificate (
+	CId int NOT NULL IDENTITY(1,1),
+	CName int NOT NULL,
+	Duration varchar(255) NOT NULL,
+	Projects varchar(255) NOT NULL,
+	Videos varchar(255) NOT NULL,
+	Image varchar(255) NOT NULL,
+	Category varchar(255) NOT NULL,
+	KeySkills varchar(255) NOT NULL,
+	Description varchar(1000) NOT NULL,
+	HowItWorks varchar(1000) NOT NULL,
+	Syllabus varchar(1000) NOT NULL,
+	FaqQues varchar(1000) NOT NULL,
+	FaqAns varchar(1000) NOT NULL,
+	PRIMARY KEY (CId)
+);
+
+CREATE TABLE SkillQuiz (
+	QuizId int NOT NULL IDENTITY(1,1),
+	Subject varchar(255) NOT NULL,
+	Topic varchar(255) NOT NULL,
+	Thumbnail varchar(255) NOT NULL,
+	PRIMARY KEY (QuizId)
+);
+
+CREATE TABLE QA (
+	Qid int NOT NULL,
+	Question varchar(255) NOT NULL,
+	Hint varchar(255) NOT NULL,
+	QuizId int NOT NULL,
+	PRIMARY KEY (Qid)
+);
+
+CREATE TABLE Points (
+	UId int NOT NULL,
+	QId int NOT NULL,
+	Points int NOT NULL,
+	Date DATE NOT NULL
+);
+
+CREATE TABLE Status_Of_Learner (
+	UserId int NOT NULL,
+	CourseID int NOT NULL,
+	CourseCompletion int NOT NULL
+);
+
+CREATE TABLE Course_Resources (
+	CourseId int NOT NULL,
+	Video varchar(255) NOT NULL,
+	Thumbnail varchar(255) NOT NULL,
+	Description varchar(1000) NOT NULL,
+	Review varchar(255) NOT NULL,
+	Resources varchar(255) NOT NULL
+);
+
+CREATE TABLE Notes (
+	UserId int NOT NULL,
+	Category varchar(255) NOT NULL,
+	Description varchar(1000) NOT NULL
+);
+
+CREATE TABLE Reviews (
+	Description varchar(255) NOT NULL,
+	UserId int,
+	CourseId int,
+	Tid int
+);
+
+CREATE TABLE CTC_Reg (
+	UserId int NOT NULL,
+	CourseId int,
+	Tid int,
+	Cid int
+);
+
+CREATE TABLE Submission (
+	Tid int NOT NULL,
+	Userid int NOT NULL,
+	Work varchar(1000) NOT NULL
+);
+
+CREATE TABLE FreeResource (
+	FreeRid int NOT NULL IDENTITY(1,1),
+	Title varchar(255) NOT NULL,
+	Category varchar(255) NOT NULL,
+	ProvidedBy int NOT NULL,
+	Downloads int NOT NULL,
+	Description varchar(1000) NOT NULL,
+	Thumbnail varchar(1000) NOT NULL,
+	Book varchar(255),
+	Template varchar(255),
+	Video varchar(255),
+	PRIMARY KEY (FreeRid)
+);
+
+CREATE TABLE Options (
+	Qid int NOT NULL,
+	Op1 varchar(255) NOT NULL,
+	Op2 varchar(255) NOT NULL,
+	Op3 varchar(255) NOT NULL,
+	Op4 varchar(255) NOT NULL,
+	Ans varchar(255) NOT NULL
+);
+
+ALTER TABLE Course ADD CONSTRAINT Course_fk0 FOREIGN KEY (Created_By) REFERENCES Creator(CreatorId);
+
+ALTER TABLE Blogs ADD CONSTRAINT Blogs_fk0 FOREIGN KEY (Created_by) REFERENCES Creator(CreatorId);
+
+ALTER TABLE Training ADD CONSTRAINT Training_fk0 FOREIGN KEY (Created_by) REFERENCES Creator(CreatorId);
+
+ALTER TABLE QA ADD CONSTRAINT QA_fk0 FOREIGN KEY (QuizId) REFERENCES SkillQuiz(QuizId);
+
+ALTER TABLE Points ADD CONSTRAINT Points_fk0 FOREIGN KEY (UId) REFERENCES UserDetails(UserId);
+
+ALTER TABLE Points ADD CONSTRAINT Points_fk1 FOREIGN KEY (QId) REFERENCES SkillQuiz(QuizId);
+
+ALTER TABLE Status_Of_Learner ADD CONSTRAINT Status_Of_Learner_fk0 FOREIGN KEY (UserId) REFERENCES UserDetails(UserId);
+
+ALTER TABLE Status_Of_Learner ADD CONSTRAINT Status_Of_Learner_fk1 FOREIGN KEY (CourseID) REFERENCES Course(CourseId);
+
+ALTER TABLE Course_Resources ADD CONSTRAINT Course_Resources_fk0 FOREIGN KEY (CourseId) REFERENCES Course(CourseId);
+
+ALTER TABLE Notes ADD CONSTRAINT Notes_fk0 FOREIGN KEY (UserId) REFERENCES UserDetails(UserId);
+
+ALTER TABLE Reviews ADD CONSTRAINT Reviews_fk0 FOREIGN KEY (UserId) REFERENCES UserDetails(UserId);
+
+ALTER TABLE Reviews ADD CONSTRAINT Reviews_fk1 FOREIGN KEY (CourseId) REFERENCES Course(CourseId);
+
+ALTER TABLE Reviews ADD CONSTRAINT Reviews_fk2 FOREIGN KEY (Tid) REFERENCES Training(TId);
+
+ALTER TABLE CTC_Reg ADD CONSTRAINT CTC_Reg_fk0 FOREIGN KEY (UserId) REFERENCES UserDetails(UserId);
+
+ALTER TABLE CTC_Reg ADD CONSTRAINT CTC_Reg_fk1 FOREIGN KEY (CourseId) REFERENCES Course(CourseId);
+
+ALTER TABLE CTC_Reg ADD CONSTRAINT CTC_Reg_fk2 FOREIGN KEY (Tid) REFERENCES Training(TId);
+
+ALTER TABLE CTC_Reg ADD CONSTRAINT CTC_Reg_fk3 FOREIGN KEY (Cid) REFERENCES Certificate(CId);
+
+ALTER TABLE Submission ADD CONSTRAINT Submission_fk0 FOREIGN KEY (Tid) REFERENCES Training(TId);
+
+ALTER TABLE Submission ADD CONSTRAINT Submission_fk1 FOREIGN KEY (Userid) REFERENCES UserDetails(UserId);
+
+ALTER TABLE FreeResource ADD CONSTRAINT FreeResource_fk0 FOREIGN KEY (ProvidedBy) REFERENCES Creator(CreatorId);
+
+ALTER TABLE Options ADD CONSTRAINT Options_fk0 FOREIGN KEY (Qid) REFERENCES QA(Qid);

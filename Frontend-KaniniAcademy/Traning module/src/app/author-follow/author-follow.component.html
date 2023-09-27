@@ -1,0 +1,11 @@
+<div class="card-flex" *ngFor="let c of creators">
+    <div class="card-image">
+        <img [src]="c.creatorImage" class="rounded-circle me-2 card-author-image greyscale" alt="Author Image" width="110px" height="110px" *ngIf="c.creatorImage">
+    </div>
+    <div class="author-info ">
+        <h4 class="card-author1" >{{c.creatorName}}</h4>
+        <p class="card-description">{{c.description}}</div>
+    <div>
+        <button class="follow-button btn" style="background-color: white;">Follow</button>
+    </div>
+  </div>

@@ -1,0 +1,164 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+      <div class="col-lg-9"> <!-- Column for the main content -->
+          <!-- Continue Learning -->
+          <div class="card" style="width: 100%; margin-top: 20px; margin-bottom: 20px;">
+              <div class="card-body">
+                  <p><b>Continue Learning</b></p>
+                  <div class="row">
+                      <div class="col" *ngFor="let course of courses | slice:0:2">
+                          <div class="card" style="width: 300px;">
+                              <img src="../../assets/images/UIUX.png" alt="" class="card-img-top"
+                                  style="border-radius: 10px  10px 0px 0px;">
+                              <div class="card-body">
+                                  <p style="font-size: small;"><b></b>
+                                  </p>
+                                  <p style="font-size: small;">1:50mins</p>
+                              </div>
+                          </div>
+                      </div>
+                     
+                  </div>
+              </div>
+          </div>
+
+          <!-- Most Popular -->
+          <div class="card" style="width: 100%; margin-top: 20px; margin-bottom: 20px;">
+              <div class="card-body">
+                  <p><b>Most Popular</b></p>
+                  <div class="row">
+                      <div class="col" *ngFor="let course of courses | slice:0:3">
+                          <div class="card"  style="width: 15rem;">
+                            <img src="../../assets/images/ux.jpg" class="card-img-top">
+
+                              <div class="card-body">
+                                  <p style="font-size: small;"><b>{{course.courseName}}</b></p>
+                                  <p style="font-size: small;"><b>{{course.rating}}</b></p>
+                                  <a href="#" class="btn btn-dark">View Course</a>
+                              </div>
+                          </div>
+                      </div>
+                     
+                     
+                  </div>
+              </div>
+          </div>
+
+           <!--  Featured blogs -->
+           <div class="card" style="width: 100%; margin-top: 20px; margin-bottom: 20px;">
+              <div class="card-body">
+                  <p><b>Featured blogs</b></p>
+                  <div class="row">
+                      <div class="col" *ngFor="let b of blogs | slice:0:3">
+                          <div class="card" style="width: 15rem;">
+                              <img src="../../assets/images/PF5.svg"  alt="Card image cap" id="imgTag" *ngIf="b.image">  
+                              <div class="card-body">
+                                  <p class="card-text" style="font-size: small;"><b>
+                                    </b><br></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-3"> <!-- Column for the sidebar -->
+          <div class="sidebar">
+              <div class="card" style="height: 426; width: 250;">
+                  <div class="card-header">
+                      <img src="img/indexImg/Ellipse 175l1.png" alt="" width="50px" class="img-fluid rounded-circle "
+                          id="imgTag"><b style="margin-left: 5px;">Sriram Muralidharan</b>
+                  </div>
+
+              </div>
+              <div class="card" style="margin-top: 20px;">
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><b><i class="bi-check-all"> </i> course Completed</b>
+                          <p style="font-size: 10px; margin-left: 20px;" id="imgTag"> 5 courses</p>
+                      </li>
+                      <li class="list-group-item"><b><i class="bi-check-all"> </i> course in progress</b>
+                          <p style="font-size: 10px; margin-left: 20px;"> 2 courses</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="card" style="margin-top: 20px;">
+                  <div class="card-body">
+                      <p><i class="bi-archive"></i> There are more new jobs added</p>
+                      <p style="font-size: xx-small; color: blue;">Help us to get a right candidate</p>
+                      <a href="#" class="btn btn-dark">
+                          <h6 style="font-size: xx-small;">view jobs</h6>
+                      </a>
+                  </div>
+              </div>
+              <div class="card" style="margin-top: 20px;">
+
+                  <ul class="list-group list-group-flush">
+                      <P style="margin-top: 20px;margin-left: 20px;"><b>Continue your community chat</b></P>
+
+                      <li class="list-group-item"><img src="indexImg/social-responsibility 1ss1.png" alt=""
+                              width="20px"> <b>Hr
+                              Dept</b><br>
+                          <p style="color: blue; font-size: xx-small; margin-left: 20px;">You: How to upload tax
+                              benfits
+                              document...</p>
+                      </li>
+                      <li class="list-group-item"><img src="indexImg/economics 1ss2.png" alt="" width="20px"><b>
+                              Finance</b>
+                          <p style="color: blue; font-size: xx-small; margin-left: 20px;">50+members</p>
+                          <img src="majoimg/software 1ss3.png" alt="" width="20px"><b> Development</b>
+                          <p style="color: blue; font-size: xx-small; margin-left: 20px;">50+members</p>
+                          <img src="majoimg/customize 1ss4.png" alt="" width="20px"><b> UX Design Team</b>
+                          <p style="color: blue; font-size: xx-small; margin-left: 20px;">50+members</p>
+                      </li>
+                  </ul>
+              </div>
+
+              <div class="card" style="margin-top: 20px;">
+                  <ul class="list-group list-group-flush">
+                      <P style="margin-left: 20px;margin-top: 20px;"><b>Upcoming Events</b></P>
+                      <li class="list-group-item"><b><i class="bi-calendar-day"></i> Family day in chennai faculty</b>
+                          <p style="font-size: 12px; margin-left: 20px;color: blue;">we are sure agree.families are
+                              pivotel in
+                              our lives.</p>
+                      </li>
+                      <li class="list-group-item"><b><i class="bi-calendar-date"></i> Singapore office opening</b>
+                          <p style="font-size: 12px; margin-left: 20px; color: blue;">we are growing.we are expanding
+                              our
+                              wings!</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="card" style="margin-top: 20px;">
+
+                  <div class="card-body">
+                      <img id="imgTag" src="img/indexImg/Ellipse 177v1.png" alt="" width="30px" class="img-fluid"
+                          style="border-radius: 10px;"><b style="font-size: 14px;"> Vishnu Venkatasen has recently
+                          completed
+                          a course in UX</b>
+                  </div>
+              </div>
+              <div class="card" style="margin-top: 20px;">
+
+                  <ul class="list-group list-group-flush">
+                      <P style="margin-left: 10px; margin-top: 5px;"><b>News</b></P>
+
+                      <li class="list-group-item"><img src="img/indexImg/Rectangle 496n1.png" alt="" width="30px"
+                              class="img-fluid" style="border-radius: 10px;"> <b style="font-size: 14px;">Recently
+                              kanini launched
+                              first campus
+                              incubation center in Coimbatore, India</b></li>
+                      <li class="list-group-item"><img src="img/indexImg/Rectangle 496n2.png" alt="" width="30px"
+                              class="img-fluid" style="border-radius: 10px;"> <b style="font-size: 14px;">Chennai’s
+                              new workspace
+                              - A good
+                              ambience at work creates a positive
+                              work environment!</b></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

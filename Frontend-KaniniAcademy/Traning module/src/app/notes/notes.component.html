@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a  href="#" style="width:100%;text-align:none;font-size:15px;text-decoration:none;color:black;float:left">Download notes</a>
+        </div>
+        <div class="col">
+            <a  [routerLink]="'viewallnotes'" style="width:100%;text-align:none;font-size:15px;text-decoration:none;color:black;float:right;text-align:center">View All Notes</a>
+        </div>
+    </div>
+    <hr class="hr hr-blurry" />
+    <div>
+        <textarea class="form-control border-dark" id="exampleFormControlTextarea1" rows="3" placeholder="Add A Note" ></textarea>
+    </div><br>
+    <a  href="#"><button id="b1" class="btn btn-bg-dark" style="width:100%;text-align:center;pointer-events: none;background-color: black;color:white" >Save Notes</button></a><br>
+    <div><br>
+        <div id="d1" >
+            <h5 class="h5">My Note</h5>
+            <p class="p1">0.06</p>
+        </div>
+    </div>
+    <div class="container row" style="width:100%;font-size:13px;">
+        <p class="text-muted" style="text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, molestias ducimus soluta laborum amet nostrum nisi blanditiis quae molestiae! Commodi nemo error earum nulla illo deserunt nesciunt esse consectetur odit.<span><a routerLink="/readmorepopup" data-toggle="modal" data-target=".bd-example-modal-lg" style="text-decoration: none;color:black">Read more</a></span></p>
+        <p style="font-weight:bold;font-size:13px;width:100%;padding-right:0%"><i class="bi bi-play-circle-fill"></i> Continue your User Experience(UX):The<span>...</span></p>
+    </div>
+    <div>
+        <div id="d1" >
+            <h5 class="h5">use of usability</h5>
+            <p class="p1">0.16</p>
+        </div>
+    </div>
+    <div class="container row" style="width:100%;font-size:13px;">
+        <p class="text-muted"  style="text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, molestias ducimus soluta laborum amet nostrum nisi blanditiis quae molestiae! Commodi nemo error earum nulla illo deserunt nesciunt esse consectetur odit.<span><a routerLink="/readmorepopup" id="rm" data-toggle="modal" style="text-decoration: none;color:black">Read more</a></span></p>
+        <p style="font-weight:bold;font-size:12px"><i class="bi bi-play-circle-fill"></i> Continue your User Experience(UX):The<span>...</span></p>
+    </div>
+    <div>
+        <div id="d1" >
+            <h5 class="h5">features</h5>
+            <p class="p1">01.06</p>
+        </div>
+    </div>
+    <div class="container row" style="width:100%;font-size:13px;">
+        <p class="text-muted"  style="text-align:justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, molestias ducimus soluta laborum amet nostrum nisi blanditiis quae molestiae! Commodi nemo error earum nulla illo deserunt nesciunt esse consectetur odit.<span><a routerLink="/readmorepopup"
+        id="rm" style="text-decoration: none;color:black">Read more</a></span></p>
+        <h6 style="font-weight:bold;font-size:13px"><i class="bi bi-play-circle-fill"></i> Continue your User Experience(UX):The<span>...</span></h6>
+    </div>
+</div>
+<div class="modal" id="m1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Notes</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="d1" >
+                    <h5 class="h5">use of usability</h5>
+                    <i class="bi bi-pencil" id="i1"></i>
+                </div>
+                <div id="d2">
+                    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore iure temporibus aut expedita voluptatem maiores, rerum laudantium optio officiis! Recusandae iste eaque in, blanditiis dolor similique odit aut temporibus harum!</p>
+                    <i class="bi bi-trash3-fill" id="i2"></i>
+                </div>
+                <h6>Lorem Ipsum</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, laudantium eaque perspiciatis assumenda atque consequuntur cupiditate laboriosam, deleniti impedit, quia praesentium? Pariatur ducimus beatae est asperiores veritatis magnam et rem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est asperiores quos fuga. Quo voluptatum reprehenderit accusantium, laborum incidunt a odio temporibus mollitia eius dolore velit libero suscipit maiores? Mollitia, accusamus.</p>
+                <textarea rows="6" col="12"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark text-light" data-bs-dismiss="modal">Save notes</button>
+            </div>
+        </div>
+
+    </div>
+</div>

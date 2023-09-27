@@ -1,0 +1,19 @@
+.card-flex{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.card-body-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+}
+.greyscale{
+    filter: grayscale(100%);
+
+}
+.card-title{
+    font-family: 'Manrope'; 
+
+}

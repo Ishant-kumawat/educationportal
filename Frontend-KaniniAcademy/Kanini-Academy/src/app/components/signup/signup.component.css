@@ -1,0 +1,201 @@
+/* CSS styles for signup.component.css */
+
+.fr {
+    display: block;
+    float: right;
+  }
+  
+  .panel-heading {
+    margin-top: 20px;
+    margin-left: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  #forgot {
+    min-width: 100px;
+    margin-left: auto;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .form-inline label {
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    border-radius: 2px;
+    color: #ffffff;
+    width: 400px;
+    background-color: #2b2b2b;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  
+  .panel {
+    min-height: 380px;
+    box-shadow: 20px 20px 80px rgb(218, 218, 218);
+    border-radius: 12px;
+    margin-top: 100px;
+  }
+  
+  .input-field {
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #4343ff;
+  }
+  
+  .input-field.error {
+    border: 1px solid red;
+    color: red;
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+  }
+  
+  .fa-eye-slash.btn {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .bordert {
+    border-top: 1px solid #aaa;
+    position: relative;
+  }
+  
+  .bordert:after {
+    content: 'or connect with';
+    position: absolute;
+    top: -13px;
+    left: 33%;
+    background-color: #fff;
+    padding: 0px 8px;
+  }
+  
+  @media (max-width: 360px) {
+    #forgot {
+      margin-left: 0;
+      padding-top: 10px;
+    }
+    body {
+      height: 100%;
+    }
+    .container {
+      margin: 50px 0;
+      padding-left: 80%;
+    }
+    .bordert:after {
+      left: 25%;
+    }
+  }
+  
+  .bg-white {
+    background: none;
+    border: none;
+  }
+  
+  .toast-right-top {
+    height: auto !important;
+  }
+  
+  /* Kanini CSS */
+  
+  .welcome {
+    padding-left: 70px;
+    margin-top: 80px;
+  }
+  
+  .carousel {
+    margin-top: 30px;
+    margin-left: 65px;
+    position: relative;
+    width: 40%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(8px);
+    transition: filter 0.4s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    z-index: 2;
+    filter: blur(0);
+  }
+  
+  .carousel-item:not(.active) {
+    z-index: 1;
+  }
+  
+  .kanini {
+    width: 50%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 60px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #999;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #fff;
+  }
+  
+  .indicator.dashed.active {
+    background-color: transparent;
+    border: 1px dashed #999;
+  }
+  
