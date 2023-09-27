@@ -70,5 +70,5 @@ Steps for contribution.
 
   
 ## License
-Kanini Software Solutions 
+Ishant Kumawat
 
