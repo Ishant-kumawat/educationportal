@@ -1,4 +1,4 @@
-# ka23-kanini-academy-portal
+# academy-portal
 
 
 
