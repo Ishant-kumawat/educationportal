@@ -1,0 +1,469 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="container" id="con">
+  <div class="container" id="con">
+    <p class="text-muted">Courses/Design</p>
+      <h4>Course in Progress</h4><br>
+      <div class="container row">
+        <div class="col" *ngFor="let course of courses | slice:0:2">
+          <div class="card" style="width: 18rem;">
+            <img [src]="course.image" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text-dark">{{course.courseName}}</p>
+              <button [routerLink]="'continue1'" class="btn btn-dark">Continue</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col">
+        </div>
+      </div><br>
+      <h4>Popular Categories</h4><br>
+        <div class="row">
+          <div class="col">
+            <a [routerLink]="'userexpcourses'"><button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+              <div style="float:left;text-align:left;">
+                User Experience<br>
+                <sub class="text-muted">86 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray"></i>
+              </div>
+            </button></a>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+              <div style="float:left;text-align:left">
+                User Interface<br>
+                <sub class="text-muted">120 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+              <div style="float:left;text-align:left">
+                3D Modelling<br>
+                <sub class="text-muted">90 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+              <div style="float:left;text-align:left">
+                After effects<br>
+                <sub class="text-muted">100 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray"></i>
+              </div>
+            </button>
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+              <div style="float:left;text-align:left">
+                Graphics Design<br>
+                <sub class="text-muted">238 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+              </div>
+            </button>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col">
+              <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+                <div style="float:left;text-align:left">
+                  Animation<br>
+                  <sub class="text-muted">368 courses available</sub>
+                </div>
+                <div style="float:right;padding-top:5px;">
+                  <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+                <div style="float:left;text-align:left">
+                  Game Design<br>
+                  <sub class="text-muted">241 courses available</sub>
+                </div>
+                <div style="float:right;padding-top:5px;">
+                  <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+                <div style="float:left;text-align:left">
+                  Web Design<br>
+                  <sub class="text-muted">487 courses available</sub>
+                </div>
+                <div style="float:right;padding-top:5px;">
+                  <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+                <div style="float:left;text-align:left">
+                  VFS<br>
+                  <sub class="text-muted">63 courses available</sub>
+                </div>
+                <div style="float:right;padding-top:5px;">
+                  <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+                </div>
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-dark rounded-pill border-secondary-subtle" style="pointer-events: none;width:230px;">
+                <div style="float:left;text-align:left">
+                Blender<br>
+                <sub class="text-muted">112 courses available</sub>
+              </div>
+              <div style="float:right;padding-top:5px;">
+                <i class="bi bi-box-arrow-up-right icon-gray" ></i>
+              </div>
+              </button>
+            </div>
+          </div><br>
+          <h4>Top Courses</h4><br>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/img3.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Usability Testing in UX Research & Design Evaluation(2022)</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/imgn.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">UX Design & User Experience Design Course-Theory Only</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width:18rem;">
+                <img src="./assets/images/img5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">WordPress Development with Bootstrap:The Complete Course</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/l2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Photoshop In-Depth:Master all of Photoshop's Tools Easily</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <h3>Featured Courses</h3><br>
+          <div class="row" style="width:100%">
+            <div class="col-6">
+              <div class="card mb-3" style="max-width: 620px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./assets/images/ux.jpg" class="img-fluid rounded" alt="..." style="height:220px;" >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">UX Research for Apps:User-centric from Concept to Launch</h5>
+                      <p class="card-text text-muted">By Nancy Jain</p>
+                      <p class="card-text text-muted">3.5 total hours 23 Lectures All Levels</p>
+                      <a href="#" class="btn btn-dark">View Course</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 border-secondary-subtle">
+              <div class="card mb-3 " style="max-width: 620px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./assets/images/game.jpeg" class="img-fluid rounded" alt="..." style="height:220px;">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Become a Game Designer Complete Series Coding to Design</h5>
+                      <p class="card-text text-muted">By Nancy Jain</p>
+                      <p class="card-text text-muted">3.5 total hours 23 Lectures All Levels</p>
+                      <a href="#" class="btn btn-dark">View Course</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <h4>Recommended Courses</h4><br>
+          <div class="row">
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/pixel.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Pixel Art Master Course-Beginner to Professional/Freelance</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/adobe.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Adobe Premiere Pro CC:Video Editing in Adobe Premiere Pro</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card " style="width: 18rem;">
+                <img src="./assets/images/market.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Master Digital Product Design:UX Research &UI Design</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 18rem;">
+                <img src="./assets/images/manga art.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text">Manga Art School:Complete How to Draw Anime & Mangs Course</p>
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <h4>All Design Courses</h4><br>
+          <div class="row">
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ratings
+                </button>
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Video Duration
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  SubCategory
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topic
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Level
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Price
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-light border dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Subtitals
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+          </div><br>
+          <div id="last" >
+            <div class="card mb-3" style="max-width: 1270px;border:none;">
+              <div class="row gx-0">
+                <div class="col-md-4" >
+                  <img src="./assets/images/design3.jpg" class="img-fluid rounded" alt="..." style="height:180px;width:370px;" >
+                </div>
+                <div class="col-md-6" style="padding-left:0%">
+                  <div class="card-body" style="padding-left:0%">
+                    <h5 class="card-title">Design Thinking in 3 Steps</h5>
+                    <p class="card-text text-muted">Understand your audience envision a creative solution, and test your prototype</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md" style="float:right;padding-left:90px;">
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr hr-blurry" />
+            <div class="card mb-3" style="max-width: 1270px;border:none;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/images/change.jpg" class="img-fluid rounded" alt="..." style="height:180px;width:370px">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body" style="padding-left:0%">
+                    <h5 class="card-title">User Experience DEsign EssentialsAdobe XD UI UX Design</h5>
+                    <p class="card-text text-muted">Use XD to get a job in UI Design, User Interface, User Experience Design, UX design & Web Design</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md" style="float:right;padding-left:90px;">
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr hr-blurry" />
+            <div class="card mb-3" style="max-width: 1270px;border:none;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/images/lat.jpg" class="img-fluid rounded" alt="..." style="height:180px;width:370px" >
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body" style="padding-left:0%">
+                    <h5 class="card-title">UX & Web Design Master Course:Strategy, Design, Development</h5>
+                    <p class="card-text text-muted">Learn how to apply User Experience (UX) principles to your website designs, code a variety of sites, and increase sales!</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md" style="float:right;padding-left:90px;">
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+            <hr class="hr hr-blurry" />
+            <div class="card mb-3" style="max-width: 1270px;border:none;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./assets/images/n.jpg" class="img-fluid rounded" alt="..." style="height:180px;width:370px">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body" style="padding-left:0%">
+                    <h5 class="card-title">The Complete App Design Course-UX,UI and Design Thinking</h5>
+                    <p class="card-text text-muted">Learn App Design to Make Beautiful,Lovable Apps</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="col-md" style="float:right;padding-left:90px;">
+                  <a href="#" class="btn btn-dark">View Course</a>
+                </div>
+              </div>
+            </div>
+          </div><br><br><br>
+          <div class="container d-flex justify-content-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&lt;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&gt;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div><br><br><br><br><br>
+          
+          
+</div>
+</div>
+<div class="row g-0 footer bg-secondary-subtle p-3">
+  <div class="col-md-10 text-muted float-left ">&copy; 2022 Kanini Academy</div>
+  <div class="col-md-2 text-muted float-right">Terms of use | Privacy Policy</div>
+</div>
+

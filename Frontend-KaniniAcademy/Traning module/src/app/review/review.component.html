@@ -1,0 +1,17 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="ccontainer">
+    <h1 style="margin: 2%;margin-left: 40%;">All reviews</h1>
+    <div *ngFor="let r of review " class="profile-container">
+        <div class="profile-image">
+          <img style="height: 100px;width: 100px;" src="../../assets/images/ano.jpg" alt="Image Description">
+        </div>
+        <div class="profile-details">
+          <h4>{{r.rname }}</h4>
+          <p>{{ r.rating }} <ngb-rating [rate]="r.rating" [max]="5" [readonly]="true"></ngb-rating>{{ r.createdAt |
+            date:'yyyy-MM-dd' }}</p>
+          <p>{{r.description}}</p>
+        </div>
+      </div>
+ </div>
+ <app-footer></app-footer>

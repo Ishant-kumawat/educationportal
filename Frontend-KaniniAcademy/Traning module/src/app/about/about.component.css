@@ -1,0 +1,90 @@
+.certi-tab {
+    color: grey;
+    padding-left: 100px;
+    padding-top: 20px;
+  }
+  
+  .container {
+    display: flex;
+    grid-template-columns: auto auto;
+  }
+  
+  .column1 {
+    margin-right: 30px;
+    padding-top: 20px;
+  }
+  
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    width: 900px;
+    border: none;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  
+  .card-image {
+    width: 120px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 110px;
+    border-radius: 20px;
+    mix-blend-mode: luminosity;
+  }
+  
+  .content {
+    grid-column: 2/3;
+    padding-top: 15px;
+  }
+
+  .card-text {
+    color: grey;
+    font-size: 16px;
+  }
+  
+  .card-button {
+    grid-column: 3/3;
+    margin-left: 15px;
+    padding-top: 15px;
+  }
+  
+  .tool li {
+    list-style: none;
+    float: left;
+  }
+  
+  .tool li a:hover {
+    color: black;
+  }
+
+  .div1 {
+    padding-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .learn {
+    padding-left: 20px;
+  }
+  
+  .list {
+    padding-left: 35px;
+    color: gray;
+  }
+  
+  .para {
+    padding-left: 20px;
+    color: gray;
+  }
+  
+  .para-button {
+    padding-left: 2%;
+  }

@@ -1,0 +1,16 @@
+.img{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+#b1:hover{
+    background-color: black;
+    color:white;
+}
+.black-button {
+    background-color: black;
+    color: white;
+  }

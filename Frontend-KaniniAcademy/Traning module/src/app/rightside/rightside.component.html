@@ -1,0 +1,67 @@
+<div class="side-menu">
+
+    <p><strong>About the Certificate</strong></p>
+
+    <div *ngFor="let aboutimage of aboutimages">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image1" alt="" *ngIf="aboutimage.image1">
+            </div><br>
+            <div class="profile-details">
+                <strong>Shareable Certificate</strong>
+                <p>{{aboutimage.shareCert}}</p>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image2" alt="" *ngIf="aboutimage.image2">
+            </div><br>
+            <div class="profile-details">
+                <strong>100% online courses</strong>
+                <p>{{aboutimage.onlinecour}}</p>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image3" alt="" *ngIf="aboutimage.image3">
+            </div><br>
+            <div class="profile-details">
+                <strong>Flexible Schedule</strong>
+                <p>{{aboutimage.schedule}}</p>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image4" alt="" *ngIf="aboutimage.image4">
+            </div><br>
+            <div class="profile-details">
+                <strong>Beginner Level</strong>
+                <p>{{aboutimage.level}}</p>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image5" alt="" *ngIf="aboutimage.image5">
+            </div><br>
+            <div class="profile-details">
+                <strong>Approximately 6 months to complete</strong>
+                <p>{{aboutimage.approtime}}</p>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-image">
+                <img [src]="aboutimage.image6" alt="" *ngIf="aboutimage.image6">
+            </div><br>
+            <div class="profile-details">
+                <strong>English</strong>
+                <p>Subtitles: {{aboutimage.language}}</p>
+            </div>
+        </div>
+
+    </div>
+</div>

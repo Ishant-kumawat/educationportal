@@ -1,0 +1,16 @@
+::placeholder{
+    color:rgb(215, 223, 221)
+}
+#popup{
+    width: 600px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display:block;
+    text-align: justify;
+    background-color:white;
+}

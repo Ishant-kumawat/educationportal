@@ -1,0 +1,23 @@
+.greyscale{
+    filter: grayscale(100%);
+
+}
+.mask{
+    height: 80%;
+    width: 90%;
+   padding-left: 72px;
+   padding-top: 30px;
+}
+.lastcard{
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+
+}
+.subcard{
+    height: 100%;
+    width: 100%;
+    padding-left: 18%;
+
+}

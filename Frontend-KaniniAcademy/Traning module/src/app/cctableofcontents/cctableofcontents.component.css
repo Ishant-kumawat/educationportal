@@ -1,0 +1,15 @@
+ol li{
+    list-style-type:none;
+}
+ol{
+    padding-left:0%;
+}
+.bi{
+    padding-right:13px;
+}
+.p{
+    padding-left: 30px;
+}
+.accordian-body:hover{
+    font-weight:bold;
+}

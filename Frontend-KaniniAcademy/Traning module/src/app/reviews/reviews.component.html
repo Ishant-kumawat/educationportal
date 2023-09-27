@@ -1,0 +1,45 @@
+<!-- <div class="container" id="reviews"> 
+    <img src="./assets/img/dp.jpg" class="img" style="float:left;">
+    <div class="row">
+        <div style="float:right">
+            <p>Rahul Dravid</p>
+            <p class="text-muted" style="font-weight:none;line-height: 0%;">4.3 3 weeks ago</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus, consequatur repudiandae dolore ab similique, aperiam maiores a dolores earum quisquam mollitia consectetur pariatur, eos cupiditate? Corrupti earum enim cupiditate!</p>
+        </div>
+    </div>
+    <hr class="hr hr-blurry"/>
+    <img src="./assets/img/dp.jpg" class="img" style="float:left;">
+    <div class="row">
+        <div style="float:right">
+            <p>Rahul Dravid</p>
+            <p class="text-muted" style="font-weight:none;line-height: 0%;">4.3 3 weeks ago</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus, consequatur repudiandae dolore ab similique, aperiam maiores a dolores earum quisquam mollitia consectetur pariatur, eos cupiditate? Corrupti earum enim cupiditate!</p>
+        </div>
+    </div>
+    <hr class="hr hr-blurry"/>
+    <img src="./assets/img/dp.jpg" class="img" style="float:left;">
+    <div class="row">
+        <div style="float:right">
+            <p>Rahul Dravid</p>
+            <p class="text-muted" style="font-weight:none;line-height: 0%;">4.3 3 weeks ago</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad temporibus, consequatur repudiandae dolore ab similique, aperiam maiores a dolores earum quisquam mollitia consectetur pariatur, eos cupiditate? Corrupti earum enim cupiditate!</p>
+        </div>
+    </div><br>
+    <a href="#" class="btn btn-light border rounded" style="text-align:center">See More Review</a>
+</div> -->
+<div class="container" id="reviews">
+    <div *ngFor="let review of reviews">
+      <img src="./assets/images/dp.jpg" class="img" style="float:left;">
+      <div class="row">
+        <div style="float:right">
+          <p>{{ review.rname }}</p>
+          <p class="text-muted" style="font-weight:none;line-height: 0%;">{{ review.rating }} {{ review.createdAt }}</p>
+          <p>{{ review.description }}</p>
+        </div>
+      </div>
+      <hr class="hr hr-blurry"/>
+    </div>
+    <br>
+    <a href="#" class="btn btn-light border rounded" style="text-align:center">See More Review</a>
+  </div>
+  

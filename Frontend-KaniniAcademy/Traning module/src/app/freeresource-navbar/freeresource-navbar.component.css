@@ -1,0 +1,16 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.left {
+    grid-column: 0.75 / 2;
+    width: 100%;
+
+}
+
+.right {
+    grid-column: 2 / 6;
+    width: 100%;
+
+}

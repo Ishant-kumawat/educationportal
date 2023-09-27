@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+<div class="popup">
+  <div class="close-icon">
+    <span class="fas fa-times"></span>
+  </div>
+  <h1>Welcome to Kanini blog!</h1>
+  <p>What kind of title are you interested in?</p>
+  <div class="button-container">
+    <button id="design-btn" class="button" (click)="onClickButton('design')" [ngClass]="{'black': isButtonSelected('design')}">Design</button>
+    <button id="illustration-btn" class="button" (click)="onClickButton('illustration')" [ngClass]="{'black': isButtonSelected('illustration')}">Illustration</button>
+    <button id="health-btn" class="button" (click)="onClickButton('health')" [ngClass]="{'black': isButtonSelected('health')}">Health</button>
+    <button id="food-btn" class="button" (click)="onClickButton('food')" [ngClass]="{'black': isButtonSelected('food')}">Food</button>
+    <button id="psyology-btn" class="button" (click)="onClickButton('psycology')" [ngClass]="{'black': isButtonSelected('psycology')}">Psycology</button>
+
+    <button id="notion-btn" class="button" (click)="onClickButton('notion')" [ngClass]="{'black': isButtonSelected('notion')}">Notion</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('culture')" [ngClass]="{'black': isButtonSelected('culture')}">Culture</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('Business')" [ngClass]="{'black': isButtonSelected('health')}">Business</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('Money')" [ngClass]="{'black': isButtonSelected('health')}">Money</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('Art')" [ngClass]="{'black': isButtonSelected('health')}">Art</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('Book')" [ngClass]="{'black': isButtonSelected('health')}">Book</button>
+    <button id="health-btn" class="button" (click)="onClickButton('Design')" [ngClass]="{'black': isButtonSelected('health')}">Design</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('health')" [ngClass]="{'black': isButtonSelected('health')}">Health</button>
+
+    <button id="health-btn" class="button" (click)="onClickButton('Art')" [ngClass]="{'black': isButtonSelected('health')}">Art</button>
+
+        <button id="health-btn" class="button" (click)="onClickButton('Notion')" [ngClass]="{'black': isButtonSelected('health')}">Notion</button>
+
+        <button id="health-btn" class="button" (click)="onClickButton('Design')" [ngClass]="{'black': isButtonSelected('health')}">Design</button>
+
+        <button id="health-btn" class="button" (click)="onClickButton('Business')" [ngClass]="{'black': isButtonSelected('health')}">Business</button>
+
+        <button id="health-btn" class="button" (click)="onClickButton('Psycology')" [ngClass]="{'black': isButtonSelected('health')}">Psycology</button>
+
+        <button id="health-btn" class="button" (click)="onClickButton('Money')" [ngClass]="{'black': isButtonSelected('health')}">Money</button>
+
+
+
+
+  </div>
+  <button id="continue-btn" class="button" (click)="onClickContinue()">Continue</button>
+</div>

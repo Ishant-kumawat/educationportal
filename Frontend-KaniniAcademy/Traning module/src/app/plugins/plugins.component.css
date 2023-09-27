@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -2%;
+  
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: -5%;
+    justify-items: center;
+    align-items: start;
+
+}
+
+.col-md-4 {
+    width: 100%;
+}
+
+.custom-button {
+    font-size: small;
+    padding: 0.2rem 0.5rem;
+    width: auto;
+    height: auto;
+}
+
+.card {
+    border: none;
+    padding: 5%;
+    box-sizing: border-box;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-top: 75%;
+}
+
+.card-img-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale();
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: top -100px;
+}
+
+p {
+    color: darkgray;
+    line-height: 1.2;
+    font-size: 100%;
+    font-weight: 400;
+    margin-top: 1px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size:large;
+    margin: top -1px;
+
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5%;
+    margin-left: -5%;
+}
+
+span {
+    color: darkgray;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+::ng-deep {
+    .ngx-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .ngx-pagination li {
+
+        width: 35px;
+        height: 35px;
+        border-radius: 50% !important;
+        background: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.pagination.previous,
+        &.pagination-next {
+            width: 10px;
+            overflow: hidden;
+        }
+
+
+    }
+}
+
+::ng-deep .ngx-pagination li {
+    display: inline-block;
+}

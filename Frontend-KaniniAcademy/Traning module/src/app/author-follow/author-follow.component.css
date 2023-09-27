@@ -1,0 +1,27 @@
+.card-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+.follow-button{
+
+box-sizing: border-box;
+
+width: 76px;
+height: 41px;
+
+border: 1px solid #716F6F;
+border-radius: 4px;
+position: relative;
+top: 40PX;
+
+
+}
+.author-info{
+    margin-left: 3%;
+}
+   
+.greyscale{
+    filter: grayscale(100%);
+}

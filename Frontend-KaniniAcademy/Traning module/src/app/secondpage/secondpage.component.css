@@ -1,0 +1,71 @@
+
+
+.container {
+    display: flex;
+  }
+  
+  .child-container {
+    flex: 1;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .child1 {
+    width: 100%;
+  }
+  
+  .child2 {
+    width: 30%;
+    border: 1px solid lightgray;
+  }
+
+  .avatar-image,  .follow-item img {
+    width: 100px; /* Adjust the size as per your requirement */
+    height: 100px; /* Adjust the size as per your requirement */
+    border-radius: 50%; /* Make the images round */
+  }
+  
+  .profile-name {
+    margin-left: 10px; /* Add space between profile image and profile name */
+  }
+  
+  .child2 {
+    height: 900px; /* Adjust the height as per your requirement */
+  }
+  
+  .follow-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add space between follow items */
+  }
+  .follow-button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black; /* Set the border color to black */
+    border-radius: 5px;
+    padding: 8px 12px; /* Adjust the padding as per your requirement */
+    gap: 10px;
+  }
+    
+    
+  
+  .profile-image{
+    width: 60px; /* Adjust the size as per your requirement */
+    height: 60px;
+  }
+  
+.follow-item-details {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .follow-item-text {
+    margin-top: 10px;
+    color: #666666;
+  }
+  .content-text{
+    color:#666666
+  }
+
+
+  

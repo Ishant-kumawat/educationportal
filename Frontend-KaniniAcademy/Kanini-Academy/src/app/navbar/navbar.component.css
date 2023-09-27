@@ -1,0 +1,41 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+nav {
+    background-color: aliceblue;
+   
+    
+  }
+  .navbar {
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline-block;
+
+    padding-left: 60px;
+  }
+  
+  a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #e21414;
+  }
+  .dropdown-menu{
+    border: solid 1px;
+    background-color: white;
+  }
+  

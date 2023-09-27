@@ -1,0 +1,38 @@
+<app-main-navbar></app-main-navbar>
+<app-navbar></app-navbar>
+
+
+<p class="certitab"> <xng-breadcrumb [separator]="iconTemplate"></xng-breadcrumb>
+  <ng-template #iconTemplate>
+    <mat-icon>chevron_right</mat-icon>
+  </ng-template></p>
+  
+<div class="container">
+    <div class="column1">
+        <Strong style="font-size: x-large;">Resouces Categories</Strong>
+        <div class="sidebar">
+          <ul>
+            <li><a [class.clicked]="selectedOption == 'Development'"(click)="selectOption('Development')">Development<b style="margin-left: 59%;">></b></a></li>
+            <li><a [class.clicked]="selectedOption == 'Business'" (click)="selectOption('Business')">Business<b style="margin-left: 72%;">></b></a></li>
+            <li><a [class.clicked]="selectedOption == 'Finance'" (click)="selectOption('Finance')">Finance & Accounting<b style="margin-left: 37%;">></b></a></li>
+            <li><a [class.clicked]="selectedOption == 'Design'"(click)="selectOption('Design')">Design <b style="margin-left: 74%;">></b></a></li>
+            <li><a [class.clicked]="selectedOption == 'HR'" (click)="selectOption('HR')">Human Resources<b style="margin-left: 47%;">></b></a></li>
+            <li><a [class.clicked]="selectedOption == 'Marketing'"(click)="selectOption('Marketing')">Marketing <b style="margin-left: 65%;">></b></a></li>
+          </ul>
+        </div>
+      </div>   
+    <div class="tool">
+        <ul id="train">
+          <li><a style="text-decoration: none;  font-size: large; color: black;" routerLink="Training">Training</a></li>
+          <li><a (click)="Certificates"style="text-decoration: none; font-size: large; color: black; padding-left: 50px;" routerLink="Certificate">Certifications</a></li>
+        </ul>
+        <select name="select" style="float: right; border-radius: 5px; border: none; background-color: rgba(163, 163, 159, 0.343);  width: 14%; ">
+          <option value="">Sort By Newest</option>
+          <option value="">Sort By Oldest</option>
+        </select>
+        <div>
+            <router-outlet></router-outlet>
+        </div>
+  </div>
+</div>
+<app-footer></app-footer>

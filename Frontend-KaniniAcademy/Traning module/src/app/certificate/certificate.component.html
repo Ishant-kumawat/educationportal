@@ -1,0 +1,95 @@
+
+<div class="container">
+    <div class="column2">
+        <div style="padding-top: 15px;">
+            <div class="card flex-row" style="width: 100%" *ngFor="let certificate of certificates">
+                <div class="grid-container">
+                    <div class="card-image">
+                        <img [src]="certificate.image" alt="Tour Image" *ngIf="certificate.image" >
+                    </div>
+                    <div class="card-details">
+                        <h5 class="card-title">{{certificate.cname}}</h5>
+                        <p class="card-text">KeySkill:- {{certificate.keySkills}}</p>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6">
+                                <strong>{{certificate.duration}} Hrs</strong>
+                                <p>Online Class</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 vl">
+                                <strong>{{certificate.projects}} Hrs</strong>
+                                <p>Projects</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 vl">
+                                <strong>{{certificate.videosDuration}} Hrs</strong>
+                                <p>Videos</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 vl">
+                                <strong> Certificate Pass</strong>
+                                <p>{{certificate.certificatePass}}</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 vl">
+                                <strong>Training Format</strong>
+                                <p>{{certificate.trainingFormat}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-button"><a ><input (click)="Details(certificate.cid)" type="button" value="View Details"
+                                style="background-color: white;color: #2B2B2B;  border-radius: 3px; height: 25x; width: 110px;"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h2>Most Popular Courses</h2>
+            </div>
+
+            <div class="card flex-row" style="width: 100%" *ngFor="let certificate of certificates | slice:0:2 " >
+                <div class="grid-container">
+                    <div class="card-image">
+                        <img [src]="certificate.image" alt="Tour Image" *ngIf="certificate.image" >
+                    </div>
+                    <div class="card-details">
+                        <h5 class="card-title">{{certificate.cname}}</h5>
+                        <p class="card-text">{{certificate.keySkills}}</p>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6">
+                                <strong>{{certificate.duration}} Hrs</strong>
+                                <p>Online Class</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 vl">
+                                <strong>{{certificate.projects}} Hrs</strong>
+                                <p>Projects</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6 vl">
+                                <strong>{{certificate.videosDuration}} Hrs</strong>
+                                <p>Videos</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 vl">
+                                <strong> Certificate Pass</strong>
+                                <p>{{certificate.certificatePass}}</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 vl">
+                                <strong>Training Format</strong>
+                                <p>{{certificate.trainingFormat}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-button"><a ><input (click)="Details(certificate.cid)" type="button" value="View Details"
+                                style="background-color: white;color: #2B2B2B;  border-radius: 3px; height: 25x; width: 110px;"></a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
