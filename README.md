@@ -63,7 +63,7 @@ List of all the technologies, frameworks, and libraries  used in project.
 ## Contributing
 Steps for contribution.
 - For new contributors.
-- git clone "https://github.com/kanini/ka23-kanini-academy-portal.git".
+- git clone "https://github.com/Ishant-kumawat/educationportal.git".
 - Create a branch of Your name and start working.
 - For committing the code raise a pull request and select the reviewer for the top right corner.
 - After successful review merge the request.
