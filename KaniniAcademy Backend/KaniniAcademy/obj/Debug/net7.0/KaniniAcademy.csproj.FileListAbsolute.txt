@@ -1283,3 +1283,14 @@ C:\Users\ishan\Downloads\project\ka23-kanini-academy-portal\KaniniAcademy Backen
 C:\Users\ishan\Downloads\project\ka23-kanini-academy-portal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.pdb
 C:\Users\ishan\Downloads\project\ka23-kanini-academy-portal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.genruntimeconfig.cache
 C:\Users\ishan\Downloads\project\ka23-kanini-academy-portal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\ref\KaniniAcademy.dll
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.csproj.AssemblyReference.cache
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.AssemblyInfoInputs.cache
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.AssemblyInfo.cs
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.csproj.CoreCompileInputs.cache
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.MvcApplicationPartsAssemblyInfo.cs
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.MvcApplicationPartsAssemblyInfo.cache
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.sourcelink.json
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.dll
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\refint\KaniniAcademy.dll
+Z:\Project\educationportal\KaniniAcademy Backend\KaniniAcademy\obj\Debug\net7.0\KaniniAcademy.pdb
