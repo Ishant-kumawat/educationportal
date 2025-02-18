@@ -8,22 +8,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<KaniniAcademyContext>(
+//MySQL connection string
+/*builder.Services.AddDbContext<KaniniAcademyContext>(
     options =>
     {
         options.UseMySql(builder.Configuration.GetConnectionString("KaniniDb"),
             ServerVersion.Parse("8.0.23-mysql"));
     }
-    );
+    );*/
 
-builder.Services.ConfigureSwaggerGen(setup =>
+/*builder.Services.ConfigureSwaggerGen(setup =>
 {
     setup.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
     {
        
         Version = "v1"
     });
-});
+});*/
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
 builder.Services.AddScoped<ICertificationRepository, CertificationRepository>();
@@ -43,7 +44,8 @@ builder.Services.AddScoped<IStatusOfLearning, StatusOfLearningRepository>();
 builder.Services.AddScoped<ISubmission, SubmissionRepository>();
 builder.Services.AddScoped<ITraining, TrainingRepository>();
 builder.Services.AddScoped<IUserDetails, UserDetailsRepository>();
-builder.Services.AddDbContext<KaniniAcademyContext>(options => options.UseSqlServer("constr"));
+builder.Services.AddDbContext<KaniniAcademyContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProjectDB")));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("MyCorPolicy", builder =>
